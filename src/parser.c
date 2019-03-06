@@ -7,7 +7,7 @@ void parse ()                       // analiza sintacticamente y traduce la list
 {
     lookahead = lexan();
     while (lookahead != DONE) {
-        expr(); match(';'); emit('\n');
+        expr(); match(';'); emit(';');
     }
 }
 

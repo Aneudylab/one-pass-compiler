@@ -3,8 +3,10 @@
 emit (int t, int tval)                          // genera salida
 {
     switch (t) {
-        case '+': case '-': case '*': case '/': case '\n': 
+        case '+': case '-': case '*': case '/': 
             printf("%c ", t); break;
+        case ';':
+            putchar('\n'); break;
         case DIV:
             printf("DIV "); break;
         case MOD:
